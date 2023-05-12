@@ -3,7 +3,7 @@
   hosts: web
   become: true
   tasks:
-  - name: latest Apache version installed
+  - name: Latest Apache version installed
     ansible.builtin.package:
       name: httpd
       state: latest
@@ -12,7 +12,7 @@
       name: httpd
       enabled: true
       state: started
-  - name: copy web.html
+  - name: Copy web.html
     ansible.builtin.copy:
-      src: "{{ stage }}_web.html"
+      src: "prod_web.html"
       dest: /var/www/html/index.html
