@@ -1,0 +1,14 @@
+{
+    "name": "Apache Survey",
+    "description": "Survey for Apache install playbook",
+    "spec": [
+        {
+        "type": "text",
+        "question_name": "Hellow fellow student!",
+        "question_description": "What is your name?",
+        "variable": "student_name",
+        "required": false,
+        "default": "Skippy"
+        }
+    ]
+}
