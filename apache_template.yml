@@ -1,0 +1,21 @@
+---
+- name: Apache server installed
+  hosts: web
+  become: true
+  tasks:
+  - name: Latest Apache version installed
+    ansible.builtin.package:
+      name: httpd
+      state: latest
+  - name: Apache enabled and running
+    ansible.builtin.service:
+      name: httpd
+      enabled: true
+      state: started
+  - name: Copy web.html
+    ansible.builtin.template:
+      src: "template_web.html.j2"
+      dest: /var/www/html/index.html
+#      owner: httpd
+##     group: httpd
+##     mode: '0644'
