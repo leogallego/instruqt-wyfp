@@ -1,4 +1,4 @@
 <body>
 <h1>This is a production webserver, take care!</h1>
-<p>Congratulations {{ student_name }}, you deployed Apache successfully!</p>
+<p>Congratulations {{ student_name|default('Skippy') }}, you deployed Apache successfully!</p>
 </body>
