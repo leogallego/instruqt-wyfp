@@ -4,8 +4,8 @@
     "spec": [
         {
         "type": "text",
-        "question_name": "Hellow fellow student!",
-        "question_description": "What is your name?",
+        "question_name": "What is your name, fellow student?",
+        "question_description": "Enter your name or nickname to see it works!",
         "variable": "student_name",
         "required": false,
         "default": "Skippy"
